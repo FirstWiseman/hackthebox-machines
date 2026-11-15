@@ -1,0 +1,36 @@
+curl --url 'http://10.129.88.171/api/check-in' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.9' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -b 'session_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE3OTM2MzIyNTMsImlhdCI6MTc5MzU0NTg1MywiaXNzIjoidGFrZW9mZi5odGIifQ.PUBdh0fvjzTiQA05oQDhvUHoZzauyPuRFHZENOnwtyo' \
+  -H 'HX-Boosted: true' \
+  -H 'HX-Current-URL: http://10.129.88.171/check-in?msg=Ticket+reset+%E2%80%94+ready+to+check+in+again' \
+  -H 'HX-Request: true' \
+  -H 'Origin: http://10.129.88.171' \
+  -H 'Proxy-Connection: keep-alive' \
+  -H 'Referer: http://10.129.88.171/check-in?msg=Ticket+reset+%E2%80%94+ready+to+check+in+again' \
+  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36' \
+  --data-raw 'qr_data=ThAAHSpnb2IuVmVyaWZ5VGlja2V0QXV0aGVudGljaXR5fwMBARhWZXJpZnlUaWNrZXRBdXRoZW50aWNpdHkB%2F4AAAQEBBERhdGEBCgAAAP%2B0%2F4D%2FsAH%2FrHsiUE5SIjoiR0hQMlQyIiwiVG9rZW4iOiJiZjQ1ZjI2MTA1MGMwNjFiYjI2MGNjMDVjODE1MmQyYSIsIlNlYXQiOiIxQSIsIlBhc3NlbmdlciI6IkpvaG5hIFN0b25lcyIsIk5vdGlmeUNtZCI6ImNoZWNrLWluLW5vdGlmeSAtLXBuciBHSFAyVDIgLS1lbWFpbCBqb2huYS5zdG9uZXNAZ21haWwuY29tIn0AhJ8mkvWDvGi9WfPyjD8AGqmvqsUyTEPyuO9CQeSe12s%3D&gate=WEB' \
+  --insecure | jq
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+100    785 100    364 100    421   1044   1208                              0
+{
+  "decoded": {
+    "PNR": "GHP2T2",
+    "Token": "bf45f261050c061bb260cc05c8152d2a",
+    "Seat": "1A",
+    "Passenger": "Johna Stones",
+    "NotifyCmd": "check-in-notify --pnr GHP2T2 --email johna.stones@gmail.com"
+  },
+  "departure": "2026-11-02T11:00:00+00:00",
+  "flight": "HTB-202 · Goldwater Flyer",
+  "passenger": "Johna Stones",
+  "pnr": "GHP2T2",
+  "seat": {
+    "class": "First",
+    "row": 1,
+    "seat": "1A"
+  },
+  "status": "ok"
+}

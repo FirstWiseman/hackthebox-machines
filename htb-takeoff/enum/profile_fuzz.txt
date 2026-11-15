@@ -1,0 +1,16 @@
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://10.129.88.171/profile/FUZZ
+ :: Wordlist         : FUZZ: /home/wiseman/hacking/seclists/Discovery/Web-Content/common.txt
+ :: Header           : Cookie: session_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE3OTM2MjY3NjcsImlhdCI6MTc5MzU0MDM2NywiaXNzIjoidGFrZW9mZi5odGIifQ.GZ4N0dkkS-qO3SP2WHgs-UkzBtV-oatdgqgK56VWIOI
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
+________________________________________________
+
+password                [Status: 405, Size: 33, Words: 3, Lines: 2, Duration: 76ms]
+update                  [Status: 405, Size: 33, Words: 3, Lines: 2, Duration: 58ms]
+:: Progress: [4748/4748] :: Job [1/1] :: 615 req/sec :: Duration: [0:00:08] :: Errors: 0 ::

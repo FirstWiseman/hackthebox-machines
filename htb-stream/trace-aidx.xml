@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IATA_AIDX_FlightLegNotifRQ>
+  <Originator CompanyShortName="HTBTRACE"/>
+  <FlightLeg>
+    <LegIdentifier>
+      <Airline>LH</Airline>
+      <FlightNumber>9876</FlightNumber>
+      <DepartureAirport>FRA</DepartureAirport>
+      <ArrivalAirport>MUC</ArrivalAirport>
+      <OriginDate>2026-10-15</OriginDate>
+    </LegIdentifier>
+  </FlightLeg>
+</IATA_AIDX_FlightLegNotifRQ>

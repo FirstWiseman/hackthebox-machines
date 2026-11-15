@@ -1,0 +1,7 @@
+agents              [32m (Status: 200)[0m [Size: 0]
+deploy              [32m (Status: 200)[0m [Size: 0]
+docs                [32m (Status: 200)[0m [Size: 0]
+files               [32m (Status: 200)[0m [Size: 0]
+settings            [32m (Status: 200)[0m [Size: 0]
+status              [32m (Status: 200)[0m [Size: 0]
+usage               [32m (Status: 200)[0m [Size: 0]

@@ -1,0 +1,148 @@
+══╣ Possible private SSH keys were found!
+/home/svc-infra/clickhouse-server/clickhouse
+
+
+
+╔══════════╣ Analyzing Apache-Nginx Files (limit 70)
+Apache version: apache2 Not Found
+httpd Not Found
+
+Nginx version:
+══╣ PHP exec extensions
+drwxr-xr-x 2 root root 4096 Aug 21 07:57 /etc/nginx/sites-enabled
+drwxr-xr-x 2 root root 4096 Aug 21 07:57 /etc/nginx/sites-enabled
+lrwxrwxrwx 1 root root 37 Aug 20 14:43 /etc/nginx/sites-enabled/clickhouse -> /etc/nginx/sites-available/clickhouse
+server {
+    listen 80;
+    server_name db.htb-airport.htb;
+    location / {
+        proxy_pass http://127.0.0.1:8123;
+    }
+}
+lrwxrwxrwx 1 root root 39 Aug 19 21:52 /etc/nginx/sites-enabled/a_terminal-api -> /etc/nginx/sites-available/terminal-api
+server {
+    listen 80;
+    server_name api.htb-airport.htb;
+    if ($host != api.htb-airport.htb) {
+        return 301 http://api.htb-airport.htb$request_uri;
+    }
+    location / {
+        proxy_pass http://127.0.0.1:8080;
+        proxy_set_header Host $host;
+    }
+}
+
+
+
+
+-rw-r--r-- 1 root root 1446 Nov 30  2023 /etc/nginx/nginx.conf
+user www-data;
+worker_processes auto;
+pid /run/nginx.pid;
+error_log /var/log/nginx/error.log;
+include /etc/nginx/modules-enabled/*.conf;
+events {
+	worker_connections 768;
+}
+http {
+	sendfile on;
+	tcp_nopush on;
+	types_hash_max_size 2048;
+	include /etc/nginx/mime.types;
+	default_type application/octet-stream;
+	ssl_prefer_server_ciphers on;
+	access_log /var/log/nginx/access.log;
+	gzip on;
+	include /etc/nginx/conf.d/*.conf;
+	include /etc/nginx/sites-enabled/*;
+}
+
+
+drwxr-xr-x 8 root root 4096 Oct  6 08:12 /etc/nginx
+-rw-r--r-- 1 root root 1446 Nov 30  2023 /etc/nginx/nginx.conf
+user www-data;
+worker_processes auto;
+pid /run/nginx.pid;
+error_log /var/log/nginx/error.log;
+include /etc/nginx/modules-enabled/*.conf;
+events {
+	worker_connections 768;
+}
+http {
+	sendfile on;
+	tcp_nopush on;
+	types_hash_max_size 2048;
+	include /etc/nginx/mime.types;
+	default_type application/octet-stream;
+	ssl_prefer_server_ciphers on;
+	access_log /var/log/nginx/access.log;
+	gzip on;
+	include /etc/nginx/conf.d/*.conf;
+	include /etc/nginx/sites-enabled/*;
+}
+
+
+╔══════════╣ Analyzing Interesting logs Files (limit 70)
+-rw-r--r-- 1 root root 0 Oct 19 17:44 /var/log/nginx/access.log
+
+-rw-r--r-- 1 root root 0 Oct 19 17:44 /var/log/nginx/error.log
+
+
+
+╔══════════╣ Users with capabilities (T1548.001)
+╚ https://book.hacktricks.wiki/en/linux-hardening/interesting-files-permissions/linux-capabilities.html
+
+╚ Checking if PAM loads pam_cap.so
+/etc/pam.d/common-auth:25:auth	optional			pam_cap.so
+
+
+-rw-r--r-- 1 svc-infra svc-infra 6378 Aug 21 06:51 /opt/kafka_2.13-4.3.1/config/server.properties.bak
+
+
+KAFKA_LOG4J_OPTS=-Dlog4j2.configurationFile=/opt/kafka_2.13-4.3.1/bin/../config/log4j2.yaml
+
+
+
+╔══════════╣ Searching tmux sessions
+╚ https://book.hacktricks.wiki/en/linux-hardening/linux-basics/linux-privilege-escalation/index.html#open-shell-sessions
+tmux 3.4
+
+
+/tmp/tmux-1000
+
+
+
+
+Potential privilege escalation in timer: aidx-dlq-drainer.timer
+  └─ RUNS_AS_ROOT: Service runs as root
+  └─ WEAK_PERMS: Executable has 777 permissions
+
+
+
+╔══════════╣ Processes with credentials in memory (root req) (T1003.007)
+╚ https://book.hacktricks.wiki/en/linux-hardening/linux-basics/linux-privilege-escalation/index.html#credentials-from-process-memory
+gdm-password Not Found
+gnome-keyring-daemon Not Found
+lightdm Not Found
+vsftpd Not Found
+apache2 Not Found
+sshd: process found (dump creds from memory as root)
+mysql Not Found
+postgres Not Found
+redis-server Not Found
+mongod Not Found
+memcached Not Found
+elasticsearch Not Found
+jenkins Not Found
+tomcat Not Found
+nginx process found (dump creds from memory as root)
+php-fpm Not Found
+supervisord Not Found
+vncserver Not Found
+xrdp Not Found
+teamviewer Not Found
+
+
+╔══════════╣ PATH (T1574.007)
+╚ https://book.hacktricks.wiki/en/linux-hardening/linux-basics/linux-privilege-escalation/index.html#writable-path-abuses
+/home/svc-infra/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin

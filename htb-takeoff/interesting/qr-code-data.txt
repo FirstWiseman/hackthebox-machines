@@ -1,0 +1,7 @@
+{
+  "PNR": "GHP2T2",
+  "Token": "bf45f261050c061bb260cc05c8152d2a",
+  "Seat": "1A",
+  "Passenger": "Johna Stones",
+  "NotifyCmd": "check-in-notify --pnr GHP2T2 --email johna.stones@gmail.com"
+}

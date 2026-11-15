@@ -1,0 +1,12 @@
+/etc/kafka/server.properties
+/etc/kafka/config/server.properties
+/opt/kafka/config/server.properties
+/usr/local/kafka/config/server.properties
+/usr/local/etc/kafka/server.properties
+/usr/share/kafka/config/server.properties
+/opt/kafka/config/kraft/server.properties
+/usr/local/kafka/config/kraft/server.properties
+/etc/kafka/kafka.properties
+/opt/bitnami/kafka/config/server.properties
+/opt/kafka/config/server.properties
+

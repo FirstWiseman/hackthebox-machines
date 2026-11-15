@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE foo [<!ENTITY % xxe SYSTEM "file:///tmp/some.dtd"> %xxe;]>
+<foo>
+    <IATA_AIDX_FlightLegNotifRQ>
+        <Originator CompanyShortName="LH" /> 
+        <FlightLeg>
+            <LegIdentifier>
+                <Airline CodeContext="2">Some</Airline> 
+                <FlightNumber>6202</FlightNumber>
+                <DepartureAirport CodeContext="3">HOM</DepartureAirport>
+                <ArrivalAirport CodeContext="3">LIN</ArrivalAirport>
+                <OriginDate>2026-10-14</OriginDate>
+            </LegIdentifier>
+        </FlightLeg>
+    </IATA_AIDX_FlightLegNotifRQ>
+</foo>

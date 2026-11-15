@@ -1,0 +1,3 @@
+/etc/kafka/kafka_server_jaas.conf
+/opt/kafka/config/kafka_server_jaas.conf
+/usr/local/kafka/config/kafka_server_jaas.conf

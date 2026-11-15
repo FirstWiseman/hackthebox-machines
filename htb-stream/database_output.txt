@@ -1,0 +1,675 @@
+Row 1:
+──────
+transaction_id:     tx-1001
+originator:         BA
+message_type:       IATA_AIDX_FlightLegNotifRQ
+version:            22.1
+msg_timestamp:      2026-08-20T09:12:00Z
+airline:            BA
+flight_number:      286
+departure_airport:  LHR
+arrival_airport:    JFK
+origin_date:        2026-08-20
+repeat_number:      1
+operational_status: 
+event:              {"message_type":"IATA_AIDX_FlightLegNotifRQ","version":"22.1","timestamp":"2026-08-20T09:12:00Z","transaction_id":"tx-1001","originator":"BA","leg":{"ufi":{"airline":"BA","flight_number":"286","suffix":null,"departure_airport":"LHR","arrival_airport":"JFK","origin_date":"2026-08-20","repeat_number":"1"},"operational_status":null,"times":{"OFB":{"SCT":"2026-08-20T10:00:00Z","EST":"2026-08-20T10:05:00Z","ACT":"2026-08-20T10:08:00Z"},"TKO":{"ACT":"2026-08-20T10:23:00Z"},"TDN":{"EST":"2026-08-20T17:35:00Z"},"ONB":{"SCT":"2026-08-20T18:00:00Z","EST":"2026-08-20T17:44:00Z"}},"all_fields":{"LegIdentifier":{"Airline":{"@CodeContext":"3","#text":"BA"},"FlightNumber":"286","DepartureAirport":{"@CodeContext":"3","#text":"LHR"},"ArrivalAirport":{"@CodeContext":"3","#text":"JFK"},"OriginDate":"2026-08-20","RepeatNumber":{"@CurrentInd":"true","#text":"1"}},"LegData":{"@InternationalStatus":"International","AirportResources":{"@Usage":"Planned","Resource":[{"@DepartureOrArrival":"Departure","AirportZone":{"@CodeContext":"Terminal","#text":"5"},"Gate":"A10","AircraftParkingPosition":"512"},{"@DepartureOrArrival":"Arrival","AirportZone":{"@CodeContext":"Terminal","#text":"7"},"Gate":"B22"}]},"CheckInDetail":{"Airport":"LHR","Zone":"A"},"OperationTime":[{"@OperationQualifier":"OFB","@CodeContext":"9750","@TimeType":"SCT","#text":"2026-08-20T10:00:00Z"},{"@OperationQualifier":"OFB","@CodeContext":"9750","@TimeType":"EST","#text":"2026-08-20T10:05:00Z"},{"@OperationQualifier":"OFB","@CodeContext":"9750","@TimeType":"ACT","#text":"2026-08-20T10:08:00Z"},{"@OperationQualifier":"TKO","@CodeContext":"9750","@TimeType":"ACT","#text":"2026-08-20T10:23:00Z"},{"@OperationQualifier":"TDN","@CodeContext":"9750","@TimeType":"EST","#text":"2026-08-20T17:35:00Z"},{"@OperationQualifier":"ONB","@CodeContext":"9750","@TimeType":"SCT","#text":"2026-08-20T18:00:00Z"},{"@OperationQualifier":"ONB","@CodeContext":"9750","@TimeType":"EST","#text":"2026-08-20T17:44:00Z"}],"AircraftInfo":{"AircraftType":"777","Registration":"GZZZA"},"ServiceType":"J","DelayReason":{"@CodeContext":"IATA","Code":"18","DelayDuration":"PT8M"},"FlightStatus":{"@CodeContext":"9948","#text":"DP"}}}}}
+ingested:           2026-08-27 07:27:21
+
+Row 2:
+──────
+transaction_id:     tx-2087
+originator:         LH
+message_type:       IATA_AIDX_FlightLegNotifRQ
+version:            22.1
+msg_timestamp:      2026-08-20T05:47:00Z
+airline:            LH
+flight_number:      102
+departure_airport:  FRA
+arrival_airport:    MUC
+origin_date:        2026-08-20
+repeat_number:      1
+operational_status: 
+event:              {"message_type":"IATA_AIDX_FlightLegNotifRQ","version":"22.1","timestamp":"2026-08-20T05:47:00Z","transaction_id":"tx-2087","originator":"LH","leg":{"ufi":{"airline":"LH","flight_number":"102","suffix":null,"departure_airport":"FRA","arrival_airport":"MUC","origin_date":"2026-08-20","repeat_number":"1"},"operational_status":null,"times":{"OFB":{"SCT":"2026-08-20T06:30:00Z"},"ONB":{"SCT":"2026-08-20T07:25:00Z"}},"all_fields":{"LegIdentifier":{"Airline":{"@CodeContext":"3","#text":"LH"},"FlightNumber":"102","DepartureAirport":{"@CodeContext":"3","#text":"FRA"},"ArrivalAirport":{"@CodeContext":"3","#text":"MUC"},"OriginDate":"2026-08-20","RepeatNumber":{"@CurrentInd":"true","#text":"1"}},"LegData":{"@InternationalStatus":"Domestic","AirportResources":{"@Usage":"Planned","Resource":{"@DepartureOrArrival":"Departure","AirportZone":{"@CodeContext":"Terminal","#text":"1"},"Gate":"A26"}},"OperationTime":[{"@OperationQualifier":"OFB","@CodeContext":"9750","@TimeType":"SCT","#text":"2026-08-20T06:30:00Z"},{"@OperationQualifier":"ONB","@CodeContext":"9750","@TimeType":"SCT","#text":"2026-08-20T07:25:00Z"}],"AircraftInfo":{"AircraftType":"32N","Registration":"DAINA"},"ServiceType":"J","DelayReason":{"@CodeContext":"IATA","Code":"89"},"FlightStatus":{"@CodeContext":"9948","#text":"CX"},"RemarkFreeText":"Cancelled due to crew unavailability; passengers rebooked LH106."}}}}
+ingested:           2026-08-27 07:28:55
+
+Row 3:
+──────
+transaction_id:     
+originator:         
+message_type:       IATA_AIDX_FlightLegNotifRQ
+version:            
+msg_timestamp:      
+airline:            # This is the ssh client system-wide configuration file.  See
+# ssh_config(5) for more information.  This file provides defaults for
+# users, and the values can be changed in per-user configuration files
+# or on the command line.
+
+# Configuration data is parsed as follows:
+#  1. command line options
+#  2. user-specific file
+#  3. system-wide file
+# Any configuration value is only changed the first time it is set.
+# Thus, host-specific definitions should be at the beginning of the
+# configuration file, and defaults at the end.
+
+# Site-wide defaults for some commonly used options.  For a comprehensive
+# list of available options, their meanings and defaults, please see the
+# ssh_config(5) man page.
+
+Include /etc/ssh/ssh_config.d/*.conf
+
+Host *
+#   ForwardAgent no
+#   ForwardX11 no
+#   ForwardX11Trusted yes
+#   PasswordAuthentication yes
+#   HostbasedAuthentication no
+#   GSSAPIAuthentication no
+#   GSSAPIDelegateCredentials no
+#   GSSAPIKeyExchange no
+#   GSSAPITrustDNS no
+#   BatchMode no
+#   CheckHostIP no
+#   AddressFamily any
+#   ConnectTimeout 0
+#   StrictHostKeyChecking ask
+#   IdentityFile ~/.ssh/id_rsa
+#   IdentityFile ~/.ssh/id_dsa
+#   IdentityFile ~/.ssh/id_ecdsa
+#   IdentityFile ~/.ssh/id_ed25519
+#   Port 22
+#   Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
+#   MACs hmac-md5,hmac-sha1,umac-64@openssh.com
+#   EscapeChar ~
+#   Tunnel no
+#   TunnelDevice any:any
+#   PermitLocalCommand no
+#   VisualHostKey no
+#   ProxyCommand ssh -q -W %h:%p gateway.example.com
+#   RekeyLimit 1G 1h
+#   UserKnownHostsFile ~/.ssh/known_hosts.d/%k
+    SendEnv LANG LC_*
+    HashKnownHosts yes
+    GSSAPIAuthentication yes
+flight_number:      6202
+departure_airport:  HOM
+arrival_airport:    LIN
+origin_date:        2026-10-14
+repeat_number:      
+operational_status: 
+event:              {"message_type":"IATA_AIDX_FlightLegNotifRQ","version":null,"timestamp":null,"transaction_id":null,"originator":null,"leg":{"ufi":{"airline":"# This is the ssh client system-wide configuration file.  See\n# ssh_config(5) for more information.  This file provides defaults for\n# users, and the values can be changed in per-user configuration files\n# or on the command line.\n\n# Configuration data is parsed as follows:\n#  1. command line options\n#  2. user-specific file\n#  3. system-wide file\n# Any configuration value is only changed the first time it is set.\n# Thus, host-specific definitions should be at the beginning of the\n# configuration file, and defaults at the end.\n\n# Site-wide defaults for some commonly used options.  For a comprehensive\n# list of available options, their meanings and defaults, please see the\n# ssh_config(5) man page.\n\nInclude /etc/ssh/ssh_config.d/*.conf\n\nHost *\n#   ForwardAgent no\n#   ForwardX11 no\n#   ForwardX11Trusted yes\n#   PasswordAuthentication yes\n#   HostbasedAuthentication no\n#   GSSAPIAuthentication no\n#   GSSAPIDelegateCredentials no\n#   GSSAPIKeyExchange no\n#   GSSAPITrustDNS no\n#   BatchMode no\n#   CheckHostIP no\n#   AddressFamily any\n#   ConnectTimeout 0\n#   StrictHostKeyChecking ask\n#   IdentityFile ~/.ssh/id_rsa\n#   IdentityFile ~/.ssh/id_dsa\n#   IdentityFile ~/.ssh/id_ecdsa\n#   IdentityFile ~/.ssh/id_ed25519\n#   Port 22\n#   Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc\n#   MACs hmac-md5,hmac-sha1,umac-64@openssh.com\n#   EscapeChar ~\n#   Tunnel no\n#   TunnelDevice any:any\n#   PermitLocalCommand no\n#   VisualHostKey no\n#   ProxyCommand ssh -q -W %h:%p gateway.example.com\n#   RekeyLimit 1G 1h\n#   UserKnownHostsFile ~/.ssh/known_hosts.d/%k\n    SendEnv LANG LC_*\n    HashKnownHosts yes\n    GSSAPIAuthentication yes","flight_number":"6202","suffix":null,"departure_airport":"HOM","arrival_airport":"LIN","origin_date":"2026-10-14","repeat_number":null},"operational_status":null,"times":{},"all_fields":{"LegIdentifier":{"Airline":{"@CodeContext":"3","#text":"# This is the ssh client system-wide configuration file.  See\n# ssh_config(5) for more information.  This file provides defaults for\n# users, and the values can be changed in per-user configuration files\n# or on the command line.\n\n# Configuration data is parsed as follows:\n#  1. command line options\n#  2. user-specific file\n#  3. system-wide file\n# Any configuration value is only changed the first time it is set.\n# Thus, host-specific definitions should be at the beginning of the\n# configuration file, and defaults at the end.\n\n# Site-wide defaults for some commonly used options.  For a comprehensive\n# list of available options, their meanings and defaults, please see the\n# ssh_config(5) man page.\n\nInclude /etc/ssh/ssh_config.d/*.conf\n\nHost *\n#   ForwardAgent no\n#   ForwardX11 no\n#   ForwardX11Trusted yes\n#   PasswordAuthentication yes\n#   HostbasedAuthentication no\n#   GSSAPIAuthentication no\n#   GSSAPIDelegateCredentials no\n#   GSSAPIKeyExchange no\n#   GSSAPITrustDNS no\n#   BatchMode no\n#   CheckHostIP no\n#   AddressFamily any\n#   ConnectTimeout 0\n#   StrictHostKeyChecking ask\n#   IdentityFile ~/.ssh/id_rsa\n#   IdentityFile ~/.ssh/id_dsa\n#   IdentityFile ~/.ssh/id_ecdsa\n#   IdentityFile ~/.ssh/id_ed25519\n#   Port 22\n#   Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc\n#   MACs hmac-md5,hmac-sha1,umac-64@openssh.com\n#   EscapeChar ~\n#   Tunnel no\n#   TunnelDevice any:any\n#   PermitLocalCommand no\n#   VisualHostKey no\n#   ProxyCommand ssh -q -W %h:%p gateway.example.com\n#   RekeyLimit 1G 1h\n#   UserKnownHostsFile ~/.ssh/known_hosts.d/%k\n    SendEnv LANG LC_*\n    HashKnownHosts yes\n    GSSAPIAuthentication yes"},"FlightNumber":"6202","DepartureAirport":{"@CodeContext":"3","#text":"HOM"},"ArrivalAirport":{"@CodeContext":"3","#text":"LIN"},"OriginDate":"2026-10-14"}}}}
+ingested:           2026-10-15 20:20:40
+
+Row 4:
+──────
+transaction_id:     
+originator:         
+message_type:       IATA_AIDX_FlightLegNotifRQ
+version:            
+msg_timestamp:      
+airline:            # This is the sshd server system-wide configuration file.  See
+# sshd_config(5) for more information.
+
+# This sshd was compiled with PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+
+# The strategy used for options in the default sshd_config shipped with
+# OpenSSH is to specify options with their default value where
+# possible, but leave them commented.  Uncommented options override the
+# default value.
+
+Include /etc/ssh/sshd_config.d/*.conf
+
+# When systemd socket activation is used (the default), the socket
+# configuration must be re-generated after changing Port, AddressFamily, or
+# ListenAddress.
+#
+# For changes to take effect, run:
+#
+#   systemctl daemon-reload
+#   systemctl restart ssh.socket
+#
+#Port 22
+#AddressFamily any
+#ListenAddress 0.0.0.0
+#ListenAddress ::
+
+#HostKey /etc/ssh/ssh_host_rsa_key
+#HostKey /etc/ssh/ssh_host_ecdsa_key
+#HostKey /etc/ssh/ssh_host_ed25519_key
+
+# Ciphers and keying
+#RekeyLimit default none
+
+# Logging
+#SyslogFacility AUTH
+#LogLevel INFO
+
+# Authentication:
+
+#LoginGraceTime 2m
+#PermitRootLogin prohibit-password
+#StrictModes yes
+#MaxAuthTries 6
+#MaxSessions 10
+
+#PubkeyAuthentication yes
+
+# Expect .ssh/authorized_keys2 to be disregarded by default in future.
+#AuthorizedKeysFile	.ssh/authorized_keys .ssh/authorized_keys2
+
+#AuthorizedPrincipalsFile none
+
+#AuthorizedKeysCommand none
+#AuthorizedKeysCommandUser nobody
+
+# For this to work you will also need host keys in /etc/ssh/ssh_known_hosts
+#HostbasedAuthentication no
+# Change to yes if you don't trust ~/.ssh/known_hosts for
+# HostbasedAuthentication
+#IgnoreUserKnownHosts no
+# Don't read the user's ~/.rhosts and ~/.shosts files
+#IgnoreRhosts yes
+
+# To disable tunneled clear text passwords, change to no here!
+#PasswordAuthentication yes
+#PermitEmptyPasswords no
+
+# Change to yes to enable challenge-response passwords (beware issues with
+# some PAM modules and threads)
+KbdInteractiveAuthentication no
+
+# Kerberos options
+#KerberosAuthentication no
+#KerberosOrLocalPasswd yes
+#KerberosTicketCleanup yes
+#KerberosGetAFSToken no
+
+# GSSAPI options
+#GSSAPIAuthentication no
+#GSSAPICleanupCredentials yes
+#GSSAPIStrictAcceptorCheck yes
+#GSSAPIKeyExchange no
+
+# Set this to 'yes' to enable PAM authentication, account processing,
+# and session processing. If this is enabled, PAM authentication will
+# be allowed through the KbdInteractiveAuthentication and
+# PasswordAuthentication.  Depending on your PAM configuration,
+# PAM authentication via KbdInteractiveAuthentication may bypass
+# the setting of "PermitRootLogin prohibit-password".
+# If you just want the PAM account and session checks to run without
+# PAM authentication, then enable this but set PasswordAuthentication
+# and KbdInteractiveAuthentication to 'no'.
+UsePAM yes
+
+#AllowAgentForwarding yes
+#AllowTcpForwarding yes
+#GatewayPorts no
+X11Forwarding yes
+#X11DisplayOffset 10
+#X11UseLocalhost yes
+#PermitTTY yes
+PrintMotd no
+PrintLastLog no
+#TCPKeepAlive yes
+#PermitUserEnvironment no
+#Compression delayed
+#ClientAliveInterval 0
+#ClientAliveCountMax 3
+#UseDNS no
+#PidFile /run/sshd.pid
+#MaxStartups 10:30:100
+#PermitTunnel no
+#ChrootDirectory none
+#VersionAddendum none
+
+# no default banner path
+#Banner none
+
+# Allow client to pass locale environment variables
+AcceptEnv LANG LC_*
+
+# override default of no subsystems
+Subsystem	sftp	/usr/lib/openssh/sftp-server
+
+# Example of overriding settings on a per-user basis
+#Match User anoncvs
+#	X11Forwarding no
+#	AllowTcpForwarding no
+#	PermitTTY no
+#	ForceCommand cvs server
+flight_number:      6202
+departure_airport:  HOM
+arrival_airport:    LIN
+origin_date:        2026-10-14
+repeat_number:      
+operational_status: 
+event:              {"message_type":"IATA_AIDX_FlightLegNotifRQ","version":null,"timestamp":null,"transaction_id":null,"originator":null,"leg":{"ufi":{"airline":"# This is the sshd server system-wide configuration file.  See\n# sshd_config(5) for more information.\n\n# This sshd was compiled with PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games\n\n# The strategy used for options in the default sshd_config shipped with\n# OpenSSH is to specify options with their default value where\n# possible, but leave them commented.  Uncommented options override the\n# default value.\n\nInclude /etc/ssh/sshd_config.d/*.conf\n\n# When systemd socket activation is used (the default), the socket\n# configuration must be re-generated after changing Port, AddressFamily, or\n# ListenAddress.\n#\n# For changes to take effect, run:\n#\n#   systemctl daemon-reload\n#   systemctl restart ssh.socket\n#\n#Port 22\n#AddressFamily any\n#ListenAddress 0.0.0.0\n#ListenAddress ::\n\n#HostKey /etc/ssh/ssh_host_rsa_key\n#HostKey /etc/ssh/ssh_host_ecdsa_key\n#HostKey /etc/ssh/ssh_host_ed25519_key\n\n# Ciphers and keying\n#RekeyLimit default none\n\n# Logging\n#SyslogFacility AUTH\n#LogLevel INFO\n\n# Authentication:\n\n#LoginGraceTime 2m\n#PermitRootLogin prohibit-password\n#StrictModes yes\n#MaxAuthTries 6\n#MaxSessions 10\n\n#PubkeyAuthentication yes\n\n# Expect .ssh/authorized_keys2 to be disregarded by default in future.\n#AuthorizedKeysFile\t.ssh/authorized_keys .ssh/authorized_keys2\n\n#AuthorizedPrincipalsFile none\n\n#AuthorizedKeysCommand none\n#AuthorizedKeysCommandUser nobody\n\n# For this to work you will also need host keys in /etc/ssh/ssh_known_hosts\n#HostbasedAuthentication no\n# Change to yes if you don't trust ~/.ssh/known_hosts for\n# HostbasedAuthentication\n#IgnoreUserKnownHosts no\n# Don't read the user's ~/.rhosts and ~/.shosts files\n#IgnoreRhosts yes\n\n# To disable tunneled clear text passwords, change to no here!\n#PasswordAuthentication yes\n#PermitEmptyPasswords no\n\n# Change to yes to enable challenge-response passwords (beware issues with\n# some PAM modules and threads)\nKbdInteractiveAuthentication no\n\n# Kerberos options\n#KerberosAuthentication no\n#KerberosOrLocalPasswd yes\n#KerberosTicketCleanup yes\n#KerberosGetAFSToken no\n\n# GSSAPI options\n#GSSAPIAuthentication no\n#GSSAPICleanupCredentials yes\n#GSSAPIStrictAcceptorCheck yes\n#GSSAPIKeyExchange no\n\n# Set this to 'yes' to enable PAM authentication, account processing,\n# and session processing. If this is enabled, PAM authentication will\n# be allowed through the KbdInteractiveAuthentication and\n# PasswordAuthentication.  Depending on your PAM configuration,\n# PAM authentication via KbdInteractiveAuthentication may bypass\n# the setting of \"PermitRootLogin prohibit-password\".\n# If you just want the PAM account and session checks to run without\n# PAM authentication, then enable this but set PasswordAuthentication\n# and KbdInteractiveAuthentication to 'no'.\nUsePAM yes\n\n#AllowAgentForwarding yes\n#AllowTcpForwarding yes\n#GatewayPorts no\nX11Forwarding yes\n#X11DisplayOffset 10\n#X11UseLocalhost yes\n#PermitTTY yes\nPrintMotd no\nPrintLastLog no\n#TCPKeepAlive yes\n#PermitUserEnvironment no\n#Compression delayed\n#ClientAliveInterval 0\n#ClientAliveCountMax 3\n#UseDNS no\n#PidFile /run/sshd.pid\n#MaxStartups 10:30:100\n#PermitTunnel no\n#ChrootDirectory none\n#VersionAddendum none\n\n# no default banner path\n#Banner none\n\n# Allow client to pass locale environment variables\nAcceptEnv LANG LC_*\n\n# override default of no subsystems\nSubsystem\tsftp\t/usr/lib/openssh/sftp-server\n\n# Example of overriding settings on a per-user basis\n#Match User anoncvs\n#\tX11Forwarding no\n#\tAllowTcpForwarding no\n#\tPermitTTY no\n#\tForceCommand cvs server","flight_number":"6202","suffix":null,"departure_airport":"HOM","arrival_airport":"LIN","origin_date":"2026-10-14","repeat_number":null},"operational_status":null,"times":{},"all_fields":{"LegIdentifier":{"Airline":{"@CodeContext":"3","#text":"# This is the sshd server system-wide configuration file.  See\n# sshd_config(5) for more information.\n\n# This sshd was compiled with PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games\n\n# The strategy used for options in the default sshd_config shipped with\n# OpenSSH is to specify options with their default value where\n# possible, but leave them commented.  Uncommented options override the\n# default value.\n\nInclude /etc/ssh/sshd_config.d/*.conf\n\n# When systemd socket activation is used (the default), the socket\n# configuration must be re-generated after changing Port, AddressFamily, or\n# ListenAddress.\n#\n# For changes to take effect, run:\n#\n#   systemctl daemon-reload\n#   systemctl restart ssh.socket\n#\n#Port 22\n#AddressFamily any\n#ListenAddress 0.0.0.0\n#ListenAddress ::\n\n#HostKey /etc/ssh/ssh_host_rsa_key\n#HostKey /etc/ssh/ssh_host_ecdsa_key\n#HostKey /etc/ssh/ssh_host_ed25519_key\n\n# Ciphers and keying\n#RekeyLimit default none\n\n# Logging\n#SyslogFacility AUTH\n#LogLevel INFO\n\n# Authentication:\n\n#LoginGraceTime 2m\n#PermitRootLogin prohibit-password\n#StrictModes yes\n#MaxAuthTries 6\n#MaxSessions 10\n\n#PubkeyAuthentication yes\n\n# Expect .ssh/authorized_keys2 to be disregarded by default in future.\n#AuthorizedKeysFile\t.ssh/authorized_keys .ssh/authorized_keys2\n\n#AuthorizedPrincipalsFile none\n\n#AuthorizedKeysCommand none\n#AuthorizedKeysCommandUser nobody\n\n# For this to work you will also need host keys in /etc/ssh/ssh_known_hosts\n#HostbasedAuthentication no\n# Change to yes if you don't trust ~/.ssh/known_hosts for\n# HostbasedAuthentication\n#IgnoreUserKnownHosts no\n# Don't read the user's ~/.rhosts and ~/.shosts files\n#IgnoreRhosts yes\n\n# To disable tunneled clear text passwords, change to no here!\n#PasswordAuthentication yes\n#PermitEmptyPasswords no\n\n# Change to yes to enable challenge-response passwords (beware issues with\n# some PAM modules and threads)\nKbdInteractiveAuthentication no\n\n# Kerberos options\n#KerberosAuthentication no\n#KerberosOrLocalPasswd yes\n#KerberosTicketCleanup yes\n#KerberosGetAFSToken no\n\n# GSSAPI options\n#GSSAPIAuthentication no\n#GSSAPICleanupCredentials yes\n#GSSAPIStrictAcceptorCheck yes\n#GSSAPIKeyExchange no\n\n# Set this to 'yes' to enable PAM authentication, account processing,\n# and session processing. If this is enabled, PAM authentication will\n# be allowed through the KbdInteractiveAuthentication and\n# PasswordAuthentication.  Depending on your PAM configuration,\n# PAM authentication via KbdInteractiveAuthentication may bypass\n# the setting of \"PermitRootLogin prohibit-password\".\n# If you just want the PAM account and session checks to run without\n# PAM authentication, then enable this but set PasswordAuthentication\n# and KbdInteractiveAuthentication to 'no'.\nUsePAM yes\n\n#AllowAgentForwarding yes\n#AllowTcpForwarding yes\n#GatewayPorts no\nX11Forwarding yes\n#X11DisplayOffset 10\n#X11UseLocalhost yes\n#PermitTTY yes\nPrintMotd no\nPrintLastLog no\n#TCPKeepAlive yes\n#PermitUserEnvironment no\n#Compression delayed\n#ClientAliveInterval 0\n#ClientAliveCountMax 3\n#UseDNS no\n#PidFile /run/sshd.pid\n#MaxStartups 10:30:100\n#PermitTunnel no\n#ChrootDirectory none\n#VersionAddendum none\n\n# no default banner path\n#Banner none\n\n# Allow client to pass locale environment variables\nAcceptEnv LANG LC_*\n\n# override default of no subsystems\nSubsystem\tsftp\t/usr/lib/openssh/sftp-server\n\n# Example of overriding settings on a per-user basis\n#Match User anoncvs\n#\tX11Forwarding no\n#\tAllowTcpForwarding no\n#\tPermitTTY no\n#\tForceCommand cvs server"},"FlightNumber":"6202","DepartureAirport":{"@CodeContext":"3","#text":"HOM"},"ArrivalAirport":{"@CodeContext":"3","#text":"LIN"},"OriginDate":"2026-10-14"}}}}
+ingested:           2026-10-15 20:19:44
+
+Row 5:
+──────
+transaction_id:     
+originator:         
+message_type:       IATA_AIDX_FlightLegNotifRQ
+version:            
+msg_timestamp:      
+airline:            DiggaLine
+flight_number:      6201
+departure_airport:  HOM
+arrival_airport:    LIN
+origin_date:        2026-10-14
+repeat_number:      
+operational_status: 
+event:              {"message_type":"IATA_AIDX_FlightLegNotifRQ","version":null,"timestamp":null,"transaction_id":null,"originator":null,"leg":{"ufi":{"airline":"DiggaLine","flight_number":"6201","suffix":null,"departure_airport":"HOM","arrival_airport":"LIN","origin_date":"2026-10-14","repeat_number":null},"operational_status":null,"times":{},"all_fields":{"LegIdentifier":{"Airline":{"@CodeContext":"3","#text":"DiggaLine"},"FlightNumber":"6201","DepartureAirport":{"@CodeContext":"3","#text":"HOM"},"ArrivalAirport":{"@CodeContext":"3","#text":"LIN"},"OriginDate":"2026-10-14"}}}}
+ingested:           2026-10-15 20:07:33
+
+Row 6:
+──────
+transaction_id:     
+originator:         
+message_type:       IATA_AIDX_FlightLegNotifRQ
+version:            
+msg_timestamp:      
+airline:            Hello from Me
+flight_number:      6202
+departure_airport:  HOM
+arrival_airport:    LIN
+origin_date:        2026-10-14
+repeat_number:      
+operational_status: 
+event:              {"message_type":"IATA_AIDX_FlightLegNotifRQ","version":null,"timestamp":null,"transaction_id":null,"originator":null,"leg":{"ufi":{"airline":"Hello from Me","flight_number":"6202","suffix":null,"departure_airport":"HOM","arrival_airport":"LIN","origin_date":"2026-10-14","repeat_number":null},"operational_status":null,"times":{},"all_fields":{"LegIdentifier":{"Airline":{"@CodeContext":"3","#text":"Hello from Me"},"FlightNumber":"6202","DepartureAirport":{"@CodeContext":"3","#text":"HOM"},"ArrivalAirport":{"@CodeContext":"3","#text":"LIN"},"OriginDate":"2026-10-14"}}}}
+ingested:           2026-10-15 20:35:55
+
+Row 7:
+──────
+transaction_id:     
+originator:         
+message_type:       IATA_AIDX_FlightLegNotifRQ
+version:            
+msg_timestamp:      
+airline:            LH
+flight_number:      1234
+departure_airport:  FRA
+arrival_airport:    MUC
+origin_date:        2026-10-14
+repeat_number:      
+operational_status: 
+event:              {"message_type":"IATA_AIDX_FlightLegNotifRQ","version":null,"timestamp":null,"transaction_id":null,"originator":null,"leg":{"ufi":{"airline":"LH","flight_number":"1234","suffix":null,"departure_airport":"FRA","arrival_airport":"MUC","origin_date":"2026-10-14","repeat_number":null},"operational_status":null,"times":{},"all_fields":{"LegIdentifier":{"Airline":{"@CodeContext":"3","#text":"LH"},"FlightNumber":"1234","DepartureAirport":{"@CodeContext":"3","#text":"FRA"},"ArrivalAirport":{"@CodeContext":"3","#text":"MUC"},"OriginDate":"2026-10-14"}}}}
+ingested:           2026-10-15 17:03:44
+
+Row 8:
+──────
+transaction_id:     
+originator:         
+message_type:       IATA_AIDX_FlightLegNotifRQ
+version:            
+msg_timestamp:      
+airline:            LH
+flight_number:      1234
+departure_airport:  FRA
+arrival_airport:    MUC
+origin_date:        2026-10-14
+repeat_number:      
+operational_status: 
+event:              {"message_type":"IATA_AIDX_FlightLegNotifRQ","version":null,"timestamp":null,"transaction_id":null,"originator":null,"leg":{"ufi":{"airline":"LH","flight_number":"1234","suffix":null,"departure_airport":"FRA","arrival_airport":"MUC","origin_date":"2026-10-14","repeat_number":null},"operational_status":null,"times":{},"all_fields":{"LegIdentifier":{"Airline":{"@CodeContext":"3","#text":"LH"},"FlightNumber":"1234","DepartureAirport":{"@CodeContext":"3","#text":"FRA"},"ArrivalAirport":{"@CodeContext":"3","#text":"MUC"},"OriginDate":"2026-10-14"}}}}
+ingested:           2026-10-15 17:03:44
+
+Row 9:
+───────
+transaction_id:     
+originator:         
+message_type:       IATA_AIDX_FlightLegNotifRQ
+version:            
+msg_timestamp:      
+airline:            NemoAirline
+flight_number:      67420
+departure_airport:  FRA
+arrival_airport:    MUC
+origin_date:        2026-10-14
+repeat_number:      
+operational_status: 
+event:              {"message_type":"IATA_AIDX_FlightLegNotifRQ","version":null,"timestamp":null,"transaction_id":null,"originator":null,"leg":{"ufi":{"airline":"NemoAirline","flight_number":"67420","suffix":null,"departure_airport":"FRA","arrival_airport":"MUC","origin_date":"2026-10-14","repeat_number":null},"operational_status":null,"times":{},"all_fields":{"LegIdentifier":{"Airline":{"@CodeContext":"3","#text":"NemoAirline"},"FlightNumber":"67420","DepartureAirport":{"@CodeContext":"3","#text":"FRA"},"ArrivalAirport":{"@CodeContext":"3","#text":"MUC"},"OriginDate":"2026-10-14"}}}}
+ingested:           2026-10-15 17:04:35
+
+Row 10:
+───────
+transaction_id:     
+originator:         
+message_type:       IATA_AIDX_FlightLegNotifRQ
+version:            
+msg_timestamp:      
+airline:            Oerline
+flight_number:      6201
+departure_airport:  HOM
+arrival_airport:    LIN
+origin_date:        2026-10-14
+repeat_number:      
+operational_status: 
+event:              {"message_type":"IATA_AIDX_FlightLegNotifRQ","version":null,"timestamp":null,"transaction_id":null,"originator":null,"leg":{"ufi":{"airline":"Oerline","flight_number":"6201","suffix":null,"departure_airport":"HOM","arrival_airport":"LIN","origin_date":"2026-10-14","repeat_number":null},"operational_status":null,"times":{},"all_fields":{"LegIdentifier":{"Airline":{"@CodeContext":"3","#text":"Oerline"},"FlightNumber":"6201","DepartureAirport":{"@CodeContext":"3","#text":"HOM"},"ArrivalAirport":{"@CodeContext":"3","#text":"LIN"},"OriginDate":"2026-10-14"}}}}
+ingested:           2026-10-15 19:16:20
+
+Row 11:
+───────
+transaction_id:     
+originator:         
+message_type:       IATA_AIDX_FlightLegNotifRQ
+version:            
+msg_timestamp:      
+airline:            root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:
+floppy:x:25:
+tape:x:26:
+sudo:x:27:
+audio:x:29:
+dip:x:30:
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:
+staff:x:50:
+games:x:60:
+users:x:100:svc-infra,martin_cole
+nogroup:x:65534:
+systemd-journal:x:999:
+systemd-network:x:998:
+systemd-timesync:x:997:
+input:x:996:
+sgx:x:995:
+kvm:x:994:
+render:x:993:
+lxd:x:101:
+messagebus:x:102:
+systemd-resolve:x:992:
+_ssh:x:103:
+polkitd:x:991:
+crontab:x:990:
+syslog:x:104:
+uuidd:x:105:
+rdma:x:106:
+tcpdump:x:107:
+tss:x:108:
+landscape:x:109:
+fwupd-refresh:x:989:
+netdev:x:110:
+_laurel:x:988:
+svc-infra:x:1000:
+clickhouse:x:987:
+martin_cole:x:1001:
+kafka-data:x:1002:
+flight_number:      6202
+departure_airport:  HOM
+arrival_airport:    LIN
+origin_date:        2026-10-14
+repeat_number:      
+operational_status: 
+event:              {"message_type":"IATA_AIDX_FlightLegNotifRQ","version":null,"timestamp":null,"transaction_id":null,"originator":null,"leg":{"ufi":{"airline":"root:x:0:\ndaemon:x:1:\nbin:x:2:\nsys:x:3:\nadm:x:4:syslog\ntty:x:5:\ndisk:x:6:\nlp:x:7:\nmail:x:8:\nnews:x:9:\nuucp:x:10:\nman:x:12:\nproxy:x:13:\nkmem:x:15:\ndialout:x:20:\nfax:x:21:\nvoice:x:22:\ncdrom:x:24:\nfloppy:x:25:\ntape:x:26:\nsudo:x:27:\naudio:x:29:\ndip:x:30:\nwww-data:x:33:\nbackup:x:34:\noperator:x:37:\nlist:x:38:\nirc:x:39:\nsrc:x:40:\nshadow:x:42:\nutmp:x:43:\nvideo:x:44:\nsasl:x:45:\nplugdev:x:46:\nstaff:x:50:\ngames:x:60:\nusers:x:100:svc-infra,martin_cole\nnogroup:x:65534:\nsystemd-journal:x:999:\nsystemd-network:x:998:\nsystemd-timesync:x:997:\ninput:x:996:\nsgx:x:995:\nkvm:x:994:\nrender:x:993:\nlxd:x:101:\nmessagebus:x:102:\nsystemd-resolve:x:992:\n_ssh:x:103:\npolkitd:x:991:\ncrontab:x:990:\nsyslog:x:104:\nuuidd:x:105:\nrdma:x:106:\ntcpdump:x:107:\ntss:x:108:\nlandscape:x:109:\nfwupd-refresh:x:989:\nnetdev:x:110:\n_laurel:x:988:\nsvc-infra:x:1000:\nclickhouse:x:987:\nmartin_cole:x:1001:\nkafka-data:x:1002:","flight_number":"6202","suffix":null,"departure_airport":"HOM","arrival_airport":"LIN","origin_date":"2026-10-14","repeat_number":null},"operational_status":null,"times":{},"all_fields":{"LegIdentifier":{"Airline":{"@CodeContext":"3","#text":"root:x:0:\ndaemon:x:1:\nbin:x:2:\nsys:x:3:\nadm:x:4:syslog\ntty:x:5:\ndisk:x:6:\nlp:x:7:\nmail:x:8:\nnews:x:9:\nuucp:x:10:\nman:x:12:\nproxy:x:13:\nkmem:x:15:\ndialout:x:20:\nfax:x:21:\nvoice:x:22:\ncdrom:x:24:\nfloppy:x:25:\ntape:x:26:\nsudo:x:27:\naudio:x:29:\ndip:x:30:\nwww-data:x:33:\nbackup:x:34:\noperator:x:37:\nlist:x:38:\nirc:x:39:\nsrc:x:40:\nshadow:x:42:\nutmp:x:43:\nvideo:x:44:\nsasl:x:45:\nplugdev:x:46:\nstaff:x:50:\ngames:x:60:\nusers:x:100:svc-infra,martin_cole\nnogroup:x:65534:\nsystemd-journal:x:999:\nsystemd-network:x:998:\nsystemd-timesync:x:997:\ninput:x:996:\nsgx:x:995:\nkvm:x:994:\nrender:x:993:\nlxd:x:101:\nmessagebus:x:102:\nsystemd-resolve:x:992:\n_ssh:x:103:\npolkitd:x:991:\ncrontab:x:990:\nsyslog:x:104:\nuuidd:x:105:\nrdma:x:106:\ntcpdump:x:107:\ntss:x:108:\nlandscape:x:109:\nfwupd-refresh:x:989:\nnetdev:x:110:\n_laurel:x:988:\nsvc-infra:x:1000:\nclickhouse:x:987:\nmartin_cole:x:1001:\nkafka-data:x:1002:"},"FlightNumber":"6202","DepartureAirport":{"@CodeContext":"3","#text":"HOM"},"ArrivalAirport":{"@CodeContext":"3","#text":"LIN"},"OriginDate":"2026-10-14"}}}}
+ingested:           2026-10-15 20:17:01
+
+Row 12:
+───────
+transaction_id:     
+originator:         
+message_type:       IATA_AIDX_FlightLegNotifRQ
+version:            
+msg_timestamp:      
+airline:            root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+_apt:x:42:65534::/nonexistent:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+systemd-timesync:x:997:997:systemd Time Synchronization:/:/usr/sbin/nologin
+messagebus:x:101:102::/nonexistent:/usr/sbin/nologin
+systemd-resolve:x:992:992:systemd Resolver:/:/usr/sbin/nologin
+pollinate:x:102:1::/var/cache/pollinate:/bin/false
+polkitd:x:991:991:User for polkitd:/:/usr/sbin/nologin
+syslog:x:103:104::/nonexistent:/usr/sbin/nologin
+uuidd:x:104:105::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:105:107::/nonexistent:/usr/sbin/nologin
+tss:x:106:108:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:107:109::/var/lib/landscape:/usr/sbin/nologin
+fwupd-refresh:x:989:989:Firmware update daemon:/var/lib/fwupd:/usr/sbin/nologin
+usbmux:x:108:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+_laurel:x:999:988::/var/log/laurel:/bin/false
+svc-infra:x:1000:1000:,,,:/home/svc-infra:/bin/bash
+clickhouse:x:996:987::/nonexistent:/bin/false
+martin_cole:x:1001:1001:,,,:/home/martin_cole:/bin/bash
+dhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false
+flight_number:      6201
+departure_airport:  HOM
+arrival_airport:    LIN
+origin_date:        2026-10-14
+repeat_number:      
+operational_status: 
+event:              {"message_type":"IATA_AIDX_FlightLegNotifRQ","version":null,"timestamp":null,"transaction_id":null,"originator":null,"leg":{"ufi":{"airline":"root:x:0:0:root:/root:/bin/bash\ndaemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin\nbin:x:2:2:bin:/bin:/usr/sbin/nologin\nsys:x:3:3:sys:/dev:/usr/sbin/nologin\nsync:x:4:65534:sync:/bin:/bin/sync\ngames:x:5:60:games:/usr/games:/usr/sbin/nologin\nman:x:6:12:man:/var/cache/man:/usr/sbin/nologin\nlp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin\nmail:x:8:8:mail:/var/mail:/usr/sbin/nologin\nnews:x:9:9:news:/var/spool/news:/usr/sbin/nologin\nuucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin\nproxy:x:13:13:proxy:/bin:/usr/sbin/nologin\nwww-data:x:33:33:www-data:/var/www:/usr/sbin/nologin\nbackup:x:34:34:backup:/var/backups:/usr/sbin/nologin\nlist:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin\nirc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin\n_apt:x:42:65534::/nonexistent:/usr/sbin/nologin\nnobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin\nsystemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin\nsystemd-timesync:x:997:997:systemd Time Synchronization:/:/usr/sbin/nologin\nmessagebus:x:101:102::/nonexistent:/usr/sbin/nologin\nsystemd-resolve:x:992:992:systemd Resolver:/:/usr/sbin/nologin\npollinate:x:102:1::/var/cache/pollinate:/bin/false\npolkitd:x:991:991:User for polkitd:/:/usr/sbin/nologin\nsyslog:x:103:104::/nonexistent:/usr/sbin/nologin\nuuidd:x:104:105::/run/uuidd:/usr/sbin/nologin\ntcpdump:x:105:107::/nonexistent:/usr/sbin/nologin\ntss:x:106:108:TPM software stack,,,:/var/lib/tpm:/bin/false\nlandscape:x:107:109::/var/lib/landscape:/usr/sbin/nologin\nfwupd-refresh:x:989:989:Firmware update daemon:/var/lib/fwupd:/usr/sbin/nologin\nusbmux:x:108:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin\nsshd:x:109:65534::/run/sshd:/usr/sbin/nologin\n_laurel:x:999:988::/var/log/laurel:/bin/false\nsvc-infra:x:1000:1000:,,,:/home/svc-infra:/bin/bash\nclickhouse:x:996:987::/nonexistent:/bin/false\nmartin_cole:x:1001:1001:,,,:/home/martin_cole:/bin/bash\ndhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false","flight_number":"6201","suffix":null,"departure_airport":"HOM","arrival_airport":"LIN","origin_date":"2026-10-14","repeat_number":null},"operational_status":null,"times":{},"all_fields":{"LegIdentifier":{"Airline":{"@CodeContext":"3","#text":"root:x:0:0:root:/root:/bin/bash\ndaemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin\nbin:x:2:2:bin:/bin:/usr/sbin/nologin\nsys:x:3:3:sys:/dev:/usr/sbin/nologin\nsync:x:4:65534:sync:/bin:/bin/sync\ngames:x:5:60:games:/usr/games:/usr/sbin/nologin\nman:x:6:12:man:/var/cache/man:/usr/sbin/nologin\nlp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin\nmail:x:8:8:mail:/var/mail:/usr/sbin/nologin\nnews:x:9:9:news:/var/spool/news:/usr/sbin/nologin\nuucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin\nproxy:x:13:13:proxy:/bin:/usr/sbin/nologin\nwww-data:x:33:33:www-data:/var/www:/usr/sbin/nologin\nbackup:x:34:34:backup:/var/backups:/usr/sbin/nologin\nlist:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin\nirc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin\n_apt:x:42:65534::/nonexistent:/usr/sbin/nologin\nnobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin\nsystemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin\nsystemd-timesync:x:997:997:systemd Time Synchronization:/:/usr/sbin/nologin\nmessagebus:x:101:102::/nonexistent:/usr/sbin/nologin\nsystemd-resolve:x:992:992:systemd Resolver:/:/usr/sbin/nologin\npollinate:x:102:1::/var/cache/pollinate:/bin/false\npolkitd:x:991:991:User for polkitd:/:/usr/sbin/nologin\nsyslog:x:103:104::/nonexistent:/usr/sbin/nologin\nuuidd:x:104:105::/run/uuidd:/usr/sbin/nologin\ntcpdump:x:105:107::/nonexistent:/usr/sbin/nologin\ntss:x:106:108:TPM software stack,,,:/var/lib/tpm:/bin/false\nlandscape:x:107:109::/var/lib/landscape:/usr/sbin/nologin\nfwupd-refresh:x:989:989:Firmware update daemon:/var/lib/fwupd:/usr/sbin/nologin\nusbmux:x:108:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin\nsshd:x:109:65534::/run/sshd:/usr/sbin/nologin\n_laurel:x:999:988::/var/log/laurel:/bin/false\nsvc-infra:x:1000:1000:,,,:/home/svc-infra:/bin/bash\nclickhouse:x:996:987::/nonexistent:/bin/false\nmartin_cole:x:1001:1001:,,,:/home/martin_cole:/bin/bash\ndhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false"},"FlightNumber":"6201","DepartureAirport":{"@CodeContext":"3","#text":"HOM"},"ArrivalAirport":{"@CodeContext":"3","#text":"LIN"},"OriginDate":"2026-10-14"}}}}
+ingested:           2026-10-15 19:05:19
+
+Row 13:
+───────
+transaction_id:     
+originator:         
+message_type:       IATA_AIDX_FlightLegNotifRQ
+version:            
+msg_timestamp:      
+airline:            root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+_apt:x:42:65534::/nonexistent:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+systemd-timesync:x:997:997:systemd Time Synchronization:/:/usr/sbin/nologin
+messagebus:x:101:102::/nonexistent:/usr/sbin/nologin
+systemd-resolve:x:992:992:systemd Resolver:/:/usr/sbin/nologin
+pollinate:x:102:1::/var/cache/pollinate:/bin/false
+polkitd:x:991:991:User for polkitd:/:/usr/sbin/nologin
+syslog:x:103:104::/nonexistent:/usr/sbin/nologin
+uuidd:x:104:105::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:105:107::/nonexistent:/usr/sbin/nologin
+tss:x:106:108:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:107:109::/var/lib/landscape:/usr/sbin/nologin
+fwupd-refresh:x:989:989:Firmware update daemon:/var/lib/fwupd:/usr/sbin/nologin
+usbmux:x:108:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+_laurel:x:999:988::/var/log/laurel:/bin/false
+svc-infra:x:1000:1000:,,,:/home/svc-infra:/bin/bash
+clickhouse:x:996:987::/nonexistent:/bin/false
+martin_cole:x:1001:1001:,,,:/home/martin_cole:/bin/bash
+dhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false
+flight_number:      6201
+departure_airport:  HOM
+arrival_airport:    LIN
+origin_date:        2026-10-14
+repeat_number:      
+operational_status: 
+event:              {"message_type":"IATA_AIDX_FlightLegNotifRQ","version":null,"timestamp":null,"transaction_id":null,"originator":null,"leg":{"ufi":{"airline":"root:x:0:0:root:/root:/bin/bash\ndaemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin\nbin:x:2:2:bin:/bin:/usr/sbin/nologin\nsys:x:3:3:sys:/dev:/usr/sbin/nologin\nsync:x:4:65534:sync:/bin:/bin/sync\ngames:x:5:60:games:/usr/games:/usr/sbin/nologin\nman:x:6:12:man:/var/cache/man:/usr/sbin/nologin\nlp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin\nmail:x:8:8:mail:/var/mail:/usr/sbin/nologin\nnews:x:9:9:news:/var/spool/news:/usr/sbin/nologin\nuucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin\nproxy:x:13:13:proxy:/bin:/usr/sbin/nologin\nwww-data:x:33:33:www-data:/var/www:/usr/sbin/nologin\nbackup:x:34:34:backup:/var/backups:/usr/sbin/nologin\nlist:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin\nirc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin\n_apt:x:42:65534::/nonexistent:/usr/sbin/nologin\nnobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin\nsystemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin\nsystemd-timesync:x:997:997:systemd Time Synchronization:/:/usr/sbin/nologin\nmessagebus:x:101:102::/nonexistent:/usr/sbin/nologin\nsystemd-resolve:x:992:992:systemd Resolver:/:/usr/sbin/nologin\npollinate:x:102:1::/var/cache/pollinate:/bin/false\npolkitd:x:991:991:User for polkitd:/:/usr/sbin/nologin\nsyslog:x:103:104::/nonexistent:/usr/sbin/nologin\nuuidd:x:104:105::/run/uuidd:/usr/sbin/nologin\ntcpdump:x:105:107::/nonexistent:/usr/sbin/nologin\ntss:x:106:108:TPM software stack,,,:/var/lib/tpm:/bin/false\nlandscape:x:107:109::/var/lib/landscape:/usr/sbin/nologin\nfwupd-refresh:x:989:989:Firmware update daemon:/var/lib/fwupd:/usr/sbin/nologin\nusbmux:x:108:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin\nsshd:x:109:65534::/run/sshd:/usr/sbin/nologin\n_laurel:x:999:988::/var/log/laurel:/bin/false\nsvc-infra:x:1000:1000:,,,:/home/svc-infra:/bin/bash\nclickhouse:x:996:987::/nonexistent:/bin/false\nmartin_cole:x:1001:1001:,,,:/home/martin_cole:/bin/bash\ndhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false","flight_number":"6201","suffix":null,"departure_airport":"HOM","arrival_airport":"LIN","origin_date":"2026-10-14","repeat_number":null},"operational_status":null,"times":{},"all_fields":{"LegIdentifier":{"Airline":{"@CodeContext":"3","#text":"root:x:0:0:root:/root:/bin/bash\ndaemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin\nbin:x:2:2:bin:/bin:/usr/sbin/nologin\nsys:x:3:3:sys:/dev:/usr/sbin/nologin\nsync:x:4:65534:sync:/bin:/bin/sync\ngames:x:5:60:games:/usr/games:/usr/sbin/nologin\nman:x:6:12:man:/var/cache/man:/usr/sbin/nologin\nlp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin\nmail:x:8:8:mail:/var/mail:/usr/sbin/nologin\nnews:x:9:9:news:/var/spool/news:/usr/sbin/nologin\nuucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin\nproxy:x:13:13:proxy:/bin:/usr/sbin/nologin\nwww-data:x:33:33:www-data:/var/www:/usr/sbin/nologin\nbackup:x:34:34:backup:/var/backups:/usr/sbin/nologin\nlist:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin\nirc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin\n_apt:x:42:65534::/nonexistent:/usr/sbin/nologin\nnobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin\nsystemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin\nsystemd-timesync:x:997:997:systemd Time Synchronization:/:/usr/sbin/nologin\nmessagebus:x:101:102::/nonexistent:/usr/sbin/nologin\nsystemd-resolve:x:992:992:systemd Resolver:/:/usr/sbin/nologin\npollinate:x:102:1::/var/cache/pollinate:/bin/false\npolkitd:x:991:991:User for polkitd:/:/usr/sbin/nologin\nsyslog:x:103:104::/nonexistent:/usr/sbin/nologin\nuuidd:x:104:105::/run/uuidd:/usr/sbin/nologin\ntcpdump:x:105:107::/nonexistent:/usr/sbin/nologin\ntss:x:106:108:TPM software stack,,,:/var/lib/tpm:/bin/false\nlandscape:x:107:109::/var/lib/landscape:/usr/sbin/nologin\nfwupd-refresh:x:989:989:Firmware update daemon:/var/lib/fwupd:/usr/sbin/nologin\nusbmux:x:108:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin\nsshd:x:109:65534::/run/sshd:/usr/sbin/nologin\n_laurel:x:999:988::/var/log/laurel:/bin/false\nsvc-infra:x:1000:1000:,,,:/home/svc-infra:/bin/bash\nclickhouse:x:996:987::/nonexistent:/bin/false\nmartin_cole:x:1001:1001:,,,:/home/martin_cole:/bin/bash\ndhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false"},"FlightNumber":"6201","DepartureAirport":{"@CodeContext":"3","#text":"HOM"},"ArrivalAirport":{"@CodeContext":"3","#text":"LIN"},"OriginDate":"2026-10-14"}}}}
+ingested:           2026-10-15 19:47:56
+
+Row 14:
+───────
+transaction_id:     
+originator:         
+message_type:       IATA_AIDX_FlightLegNotifRQ
+version:            
+msg_timestamp:      
+airline:            root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+_apt:x:42:65534::/nonexistent:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+systemd-timesync:x:997:997:systemd Time Synchronization:/:/usr/sbin/nologin
+messagebus:x:101:102::/nonexistent:/usr/sbin/nologin
+systemd-resolve:x:992:992:systemd Resolver:/:/usr/sbin/nologin
+pollinate:x:102:1::/var/cache/pollinate:/bin/false
+polkitd:x:991:991:User for polkitd:/:/usr/sbin/nologin
+syslog:x:103:104::/nonexistent:/usr/sbin/nologin
+uuidd:x:104:105::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:105:107::/nonexistent:/usr/sbin/nologin
+tss:x:106:108:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:107:109::/var/lib/landscape:/usr/sbin/nologin
+fwupd-refresh:x:989:989:Firmware update daemon:/var/lib/fwupd:/usr/sbin/nologin
+usbmux:x:108:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+_laurel:x:999:988::/var/log/laurel:/bin/false
+svc-infra:x:1000:1000:,,,:/home/svc-infra:/bin/bash
+clickhouse:x:996:987::/nonexistent:/bin/false
+martin_cole:x:1001:1001:,,,:/home/martin_cole:/bin/bash
+dhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false
+flight_number:      6202
+departure_airport:  HOM
+arrival_airport:    LIN
+origin_date:        2026-10-14
+repeat_number:      
+operational_status: 
+event:              {"message_type":"IATA_AIDX_FlightLegNotifRQ","version":null,"timestamp":null,"transaction_id":null,"originator":null,"leg":{"ufi":{"airline":"root:x:0:0:root:/root:/bin/bash\ndaemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin\nbin:x:2:2:bin:/bin:/usr/sbin/nologin\nsys:x:3:3:sys:/dev:/usr/sbin/nologin\nsync:x:4:65534:sync:/bin:/bin/sync\ngames:x:5:60:games:/usr/games:/usr/sbin/nologin\nman:x:6:12:man:/var/cache/man:/usr/sbin/nologin\nlp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin\nmail:x:8:8:mail:/var/mail:/usr/sbin/nologin\nnews:x:9:9:news:/var/spool/news:/usr/sbin/nologin\nuucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin\nproxy:x:13:13:proxy:/bin:/usr/sbin/nologin\nwww-data:x:33:33:www-data:/var/www:/usr/sbin/nologin\nbackup:x:34:34:backup:/var/backups:/usr/sbin/nologin\nlist:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin\nirc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin\n_apt:x:42:65534::/nonexistent:/usr/sbin/nologin\nnobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin\nsystemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin\nsystemd-timesync:x:997:997:systemd Time Synchronization:/:/usr/sbin/nologin\nmessagebus:x:101:102::/nonexistent:/usr/sbin/nologin\nsystemd-resolve:x:992:992:systemd Resolver:/:/usr/sbin/nologin\npollinate:x:102:1::/var/cache/pollinate:/bin/false\npolkitd:x:991:991:User for polkitd:/:/usr/sbin/nologin\nsyslog:x:103:104::/nonexistent:/usr/sbin/nologin\nuuidd:x:104:105::/run/uuidd:/usr/sbin/nologin\ntcpdump:x:105:107::/nonexistent:/usr/sbin/nologin\ntss:x:106:108:TPM software stack,,,:/var/lib/tpm:/bin/false\nlandscape:x:107:109::/var/lib/landscape:/usr/sbin/nologin\nfwupd-refresh:x:989:989:Firmware update daemon:/var/lib/fwupd:/usr/sbin/nologin\nusbmux:x:108:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin\nsshd:x:109:65534::/run/sshd:/usr/sbin/nologin\n_laurel:x:999:988::/var/log/laurel:/bin/false\nsvc-infra:x:1000:1000:,,,:/home/svc-infra:/bin/bash\nclickhouse:x:996:987::/nonexistent:/bin/false\nmartin_cole:x:1001:1001:,,,:/home/martin_cole:/bin/bash\ndhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false","flight_number":"6202","suffix":null,"departure_airport":"HOM","arrival_airport":"LIN","origin_date":"2026-10-14","repeat_number":null},"operational_status":null,"times":{},"all_fields":{"LegIdentifier":{"Airline":{"@CodeContext":"3","#text":"root:x:0:0:root:/root:/bin/bash\ndaemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin\nbin:x:2:2:bin:/bin:/usr/sbin/nologin\nsys:x:3:3:sys:/dev:/usr/sbin/nologin\nsync:x:4:65534:sync:/bin:/bin/sync\ngames:x:5:60:games:/usr/games:/usr/sbin/nologin\nman:x:6:12:man:/var/cache/man:/usr/sbin/nologin\nlp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin\nmail:x:8:8:mail:/var/mail:/usr/sbin/nologin\nnews:x:9:9:news:/var/spool/news:/usr/sbin/nologin\nuucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin\nproxy:x:13:13:proxy:/bin:/usr/sbin/nologin\nwww-data:x:33:33:www-data:/var/www:/usr/sbin/nologin\nbackup:x:34:34:backup:/var/backups:/usr/sbin/nologin\nlist:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin\nirc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin\n_apt:x:42:65534::/nonexistent:/usr/sbin/nologin\nnobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin\nsystemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin\nsystemd-timesync:x:997:997:systemd Time Synchronization:/:/usr/sbin/nologin\nmessagebus:x:101:102::/nonexistent:/usr/sbin/nologin\nsystemd-resolve:x:992:992:systemd Resolver:/:/usr/sbin/nologin\npollinate:x:102:1::/var/cache/pollinate:/bin/false\npolkitd:x:991:991:User for polkitd:/:/usr/sbin/nologin\nsyslog:x:103:104::/nonexistent:/usr/sbin/nologin\nuuidd:x:104:105::/run/uuidd:/usr/sbin/nologin\ntcpdump:x:105:107::/nonexistent:/usr/sbin/nologin\ntss:x:106:108:TPM software stack,,,:/var/lib/tpm:/bin/false\nlandscape:x:107:109::/var/lib/landscape:/usr/sbin/nologin\nfwupd-refresh:x:989:989:Firmware update daemon:/var/lib/fwupd:/usr/sbin/nologin\nusbmux:x:108:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin\nsshd:x:109:65534::/run/sshd:/usr/sbin/nologin\n_laurel:x:999:988::/var/log/laurel:/bin/false\nsvc-infra:x:1000:1000:,,,:/home/svc-infra:/bin/bash\nclickhouse:x:996:987::/nonexistent:/bin/false\nmartin_cole:x:1001:1001:,,,:/home/martin_cole:/bin/bash\ndhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false"},"FlightNumber":"6202","DepartureAirport":{"@CodeContext":"3","#text":"HOM"},"ArrivalAirport":{"@CodeContext":"3","#text":"LIN"},"OriginDate":"2026-10-14"}}}}
+ingested:           2026-10-15 20:14:06
+
+Row 15:
+───────
+transaction_id:     
+originator:         
+message_type:       IATA_AIDX_FlightLegNotifRQ
+version:            
+msg_timestamp:      
+airline:            root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+_apt:x:42:65534::/nonexistent:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+systemd-timesync:x:997:997:systemd Time Synchronization:/:/usr/sbin/nologin
+messagebus:x:101:102::/nonexistent:/usr/sbin/nologin
+systemd-resolve:x:992:992:systemd Resolver:/:/usr/sbin/nologin
+pollinate:x:102:1::/var/cache/pollinate:/bin/false
+polkitd:x:991:991:User for polkitd:/:/usr/sbin/nologin
+syslog:x:103:104::/nonexistent:/usr/sbin/nologin
+uuidd:x:104:105::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:105:107::/nonexistent:/usr/sbin/nologin
+tss:x:106:108:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:x:107:109::/var/lib/landscape:/usr/sbin/nologin
+fwupd-refresh:x:989:989:Firmware update daemon:/var/lib/fwupd:/usr/sbin/nologin
+usbmux:x:108:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+_laurel:x:999:988::/var/log/laurel:/bin/false
+svc-infra:x:1000:1000:,,,:/home/svc-infra:/bin/bash
+clickhouse:x:996:987::/nonexistent:/bin/false
+martin_cole:x:1001:1001:,,,:/home/martin_cole:/bin/bash
+dhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false
+flight_number:      6202
+departure_airport:  HOM
+arrival_airport:    LIN
+origin_date:        2026-10-14
+repeat_number:      
+operational_status: 
+event:              {"message_type":"IATA_AIDX_FlightLegNotifRQ","version":null,"timestamp":null,"transaction_id":null,"originator":null,"leg":{"ufi":{"airline":"root:x:0:0:root:/root:/bin/bash\ndaemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin\nbin:x:2:2:bin:/bin:/usr/sbin/nologin\nsys:x:3:3:sys:/dev:/usr/sbin/nologin\nsync:x:4:65534:sync:/bin:/bin/sync\ngames:x:5:60:games:/usr/games:/usr/sbin/nologin\nman:x:6:12:man:/var/cache/man:/usr/sbin/nologin\nlp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin\nmail:x:8:8:mail:/var/mail:/usr/sbin/nologin\nnews:x:9:9:news:/var/spool/news:/usr/sbin/nologin\nuucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin\nproxy:x:13:13:proxy:/bin:/usr/sbin/nologin\nwww-data:x:33:33:www-data:/var/www:/usr/sbin/nologin\nbackup:x:34:34:backup:/var/backups:/usr/sbin/nologin\nlist:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin\nirc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin\n_apt:x:42:65534::/nonexistent:/usr/sbin/nologin\nnobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin\nsystemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin\nsystemd-timesync:x:997:997:systemd Time Synchronization:/:/usr/sbin/nologin\nmessagebus:x:101:102::/nonexistent:/usr/sbin/nologin\nsystemd-resolve:x:992:992:systemd Resolver:/:/usr/sbin/nologin\npollinate:x:102:1::/var/cache/pollinate:/bin/false\npolkitd:x:991:991:User for polkitd:/:/usr/sbin/nologin\nsyslog:x:103:104::/nonexistent:/usr/sbin/nologin\nuuidd:x:104:105::/run/uuidd:/usr/sbin/nologin\ntcpdump:x:105:107::/nonexistent:/usr/sbin/nologin\ntss:x:106:108:TPM software stack,,,:/var/lib/tpm:/bin/false\nlandscape:x:107:109::/var/lib/landscape:/usr/sbin/nologin\nfwupd-refresh:x:989:989:Firmware update daemon:/var/lib/fwupd:/usr/sbin/nologin\nusbmux:x:108:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin\nsshd:x:109:65534::/run/sshd:/usr/sbin/nologin\n_laurel:x:999:988::/var/log/laurel:/bin/false\nsvc-infra:x:1000:1000:,,,:/home/svc-infra:/bin/bash\nclickhouse:x:996:987::/nonexistent:/bin/false\nmartin_cole:x:1001:1001:,,,:/home/martin_cole:/bin/bash\ndhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false","flight_number":"6202","suffix":null,"departure_airport":"HOM","arrival_airport":"LIN","origin_date":"2026-10-14","repeat_number":null},"operational_status":null,"times":{},"all_fields":{"LegIdentifier":{"Airline":{"@CodeContext":"3","#text":"root:x:0:0:root:/root:/bin/bash\ndaemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin\nbin:x:2:2:bin:/bin:/usr/sbin/nologin\nsys:x:3:3:sys:/dev:/usr/sbin/nologin\nsync:x:4:65534:sync:/bin:/bin/sync\ngames:x:5:60:games:/usr/games:/usr/sbin/nologin\nman:x:6:12:man:/var/cache/man:/usr/sbin/nologin\nlp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin\nmail:x:8:8:mail:/var/mail:/usr/sbin/nologin\nnews:x:9:9:news:/var/spool/news:/usr/sbin/nologin\nuucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin\nproxy:x:13:13:proxy:/bin:/usr/sbin/nologin\nwww-data:x:33:33:www-data:/var/www:/usr/sbin/nologin\nbackup:x:34:34:backup:/var/backups:/usr/sbin/nologin\nlist:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin\nirc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin\n_apt:x:42:65534::/nonexistent:/usr/sbin/nologin\nnobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin\nsystemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin\nsystemd-timesync:x:997:997:systemd Time Synchronization:/:/usr/sbin/nologin\nmessagebus:x:101:102::/nonexistent:/usr/sbin/nologin\nsystemd-resolve:x:992:992:systemd Resolver:/:/usr/sbin/nologin\npollinate:x:102:1::/var/cache/pollinate:/bin/false\npolkitd:x:991:991:User for polkitd:/:/usr/sbin/nologin\nsyslog:x:103:104::/nonexistent:/usr/sbin/nologin\nuuidd:x:104:105::/run/uuidd:/usr/sbin/nologin\ntcpdump:x:105:107::/nonexistent:/usr/sbin/nologin\ntss:x:106:108:TPM software stack,,,:/var/lib/tpm:/bin/false\nlandscape:x:107:109::/var/lib/landscape:/usr/sbin/nologin\nfwupd-refresh:x:989:989:Firmware update daemon:/var/lib/fwupd:/usr/sbin/nologin\nusbmux:x:108:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin\nsshd:x:109:65534::/run/sshd:/usr/sbin/nologin\n_laurel:x:999:988::/var/log/laurel:/bin/false\nsvc-infra:x:1000:1000:,,,:/home/svc-infra:/bin/bash\nclickhouse:x:996:987::/nonexistent:/bin/false\nmartin_cole:x:1001:1001:,,,:/home/martin_cole:/bin/bash\ndhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false"},"FlightNumber":"6202","DepartureAirport":{"@CodeContext":"3","#text":"HOM"},"ArrivalAirport":{"@CodeContext":"3","#text":"LIN"},"OriginDate":"2026-10-14"}}}}
+ingested:           2026-10-15 20:29:45
+
+Row 16:
+───────
+transaction_id:     
+originator:         
+message_type:       IATA_AIDX_FlightLegNotifRQ
+version:            
+msg_timestamp:      
+airline:            
+flight_number:      6202
+departure_airport:  HOM
+arrival_airport:    LIN
+origin_date:        2026-10-14
+repeat_number:      
+operational_status: 
+event:              {"message_type":"IATA_AIDX_FlightLegNotifRQ","version":null,"timestamp":null,"transaction_id":null,"originator":null,"leg":{"ufi":{"airline":null,"flight_number":"6202","suffix":null,"departure_airport":"HOM","arrival_airport":"LIN","origin_date":"2026-10-14","repeat_number":null},"operational_status":null,"times":{},"all_fields":{"LegIdentifier":{"Airline":{"@CodeContext":"3"},"FlightNumber":"6202","DepartureAirport":{"@CodeContext":"3","#text":"HOM"},"ArrivalAirport":{"@CodeContext":"3","#text":"LIN"},"OriginDate":"2026-10-14"}}}}
+ingested:           2026-10-15 20:46:18
+
+Row 17:
+───────
+transaction_id:     
+originator:         
+message_type:       IATA_AIDX_FlightLegNotifRQ
+version:            
+msg_timestamp:      
+airline:            
+flight_number:      6202
+departure_airport:  HOM
+arrival_airport:    LIN
+origin_date:        2026-10-14
+repeat_number:      
+operational_status: 
+event:              {"message_type":"IATA_AIDX_FlightLegNotifRQ","version":null,"timestamp":null,"transaction_id":null,"originator":null,"leg":{"ufi":{"airline":null,"flight_number":"6202","suffix":null,"departure_airport":"HOM","arrival_airport":"LIN","origin_date":"2026-10-14","repeat_number":null},"operational_status":null,"times":{},"all_fields":{"LegIdentifier":{"Airline":{"@CodeContext":"3"},"FlightNumber":"6202","DepartureAirport":{"@CodeContext":"3","#text":"HOM"},"ArrivalAirport":{"@CodeContext":"3","#text":"LIN"},"OriginDate":"2026-10-14"}}}}
+ingested:           2026-10-15 20:46:58

@@ -1,0 +1,9 @@
+# FFUF Report
+
+  Command line : `ffuf -u https://management.htb/FUZZ -ac -w /usr/share/seclists/Discovery/Web-Content/common.txt -of md -o ffuf-main.txt`
+  Time: 2026-11-05T19:18:05&#43;01:00
+
+  | FUZZ | URL | Redirectlocation | Position | Status Code | Content Length | Content Words | Content Lines | Content Type | Duration | ResultFile | ScraperData | Ffufhash
+  | :- | :-- | :--------------- | :---- | :------- | :---------- | :------------- | :------------ | :--------- | :----------- | :------------ | :-------- |
+  | assets | https://management.htb/assets | https://management.htb/assets/ | 737 | 301 | 178 | 6 | 8 | text/html | 62.519342ms |  |  | 708352e1
+  

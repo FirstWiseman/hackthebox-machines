@@ -1,0 +1,14 @@
+curl --url 'http://10.129.88.171/api/check-in' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.9' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -b 'session_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE3OTM2MzIyNTMsImlhdCI6MTc5MzU0NTg1MywiaXNzIjoidGFrZW9mZi5odGIifQ.PUBdh0fvjzTiQA05oQDhvUHoZzauyPuRFHZENOnwtyo' \
+  -H 'HX-Boosted: true' \
+  -H 'HX-Current-URL: http://10.129.88.171/check-in' \
+  -H 'HX-Request: true' \
+  -H 'Origin: http://10.129.88.171' \
+  -H 'Proxy-Connection: keep-alive' \
+  -H 'Referer: http://10.129.88.171/check-in' \
+  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36' \
+  --data-raw 'qr_data=ThAAHSpnb2IuVmVyaWZ5VGlja2V0QXV0aGVudGljaXR5fwMBARhWZXJpZnlUaWNrZXRBdXRoZW50aWNpdHkB%2F4AAAQEBBERhdGEBCgAAAP%2B0%2F4D%2FsAH%2FrHsiUE5SIjoiR0hQMlQyIiwiVG9rZW4iOiJiZjQ1ZjI2MTA1MGMwNjFiYjI2MGNjMDVjODE1MmQyYSIsIlNlYXQiOiIxQSIsIlBhc3NlbmdlciI6IkpvaG5hIFN0b25lcyIsIk5vdGlmeUNtZCI6ImNoZWNrLWluLW5vdGlmeSAtLXBuciBHSFAyVDIgLS1lbWFpbCBqb2huYS5zdG9uZXNAZ21haWwuY29tIn0AhJ8mkvWDvGi9WfPyjD8AGqmvqsUyTEPyuO9CQeSe12s%3D&gate=WEB' \
+  --insecure

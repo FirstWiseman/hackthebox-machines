@@ -1,0 +1,39 @@
+# Directory listings (if lxml returns them)
+/opt/aidx-pipeline/
+/opt/aidx-pipeline
+
+# App config / secrets
+/opt/aidx-pipeline/.env
+/opt/aidx-pipeline/env
+/opt/aidx-pipeline/config.py
+/opt/aidx-pipeline/config.yaml
+/opt/aidx-pipeline/config.yml
+/opt/aidx-pipeline/config.json
+/opt/aidx-pipeline/settings.py
+/opt/aidx-pipeline/settings.yaml
+
+# App source (XXE sink lives here)
+/opt/aidx-pipeline/main.py
+/opt/aidx-pipeline/app.py
+/opt/aidx-pipeline/app/main.py
+/opt/aidx-pipeline/app/__init__.py
+/opt/aidx-pipeline/api.py
+/opt/aidx-pipeline/server.py
+/opt/aidx-pipeline/pipeline.py
+/opt/aidx-pipeline/consumer.py
+/opt/aidx-pipeline/producer.py
+
+# Deployment / unit files
+/opt/aidx-pipeline/docker-compose.yml
+/opt/aidx-pipeline/docker-compose.yaml
+/opt/aidx-pipeline/Dockerfile
+/opt/aidx-pipeline/requirements.txt
+/opt/aidx-pipeline/pyproject.toml
+/etc/systemd/system/aidx-pipeline.service
+/etc/systemd/system/aidx.service
+/etc/systemd/system/aidx-api.service
+
+# Secrets that may sit in the project root
+/opt/aidx-pipeline/.git/config
+/opt/aidx-pipeline/credentials.json
+/opt/aidx-pipeline/secrets.yaml
