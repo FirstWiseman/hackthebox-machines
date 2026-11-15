@@ -1,0 +1,4 @@
+htb-stream/memory_heapdump.txt
+htb-stream/dump-strings.txt
+htb-stream/hex_heapdump.txt
+*.bin
