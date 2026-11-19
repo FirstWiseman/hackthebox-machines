@@ -4,3 +4,9 @@
 [submodule "htb-scaffold/wtftp"]
 	path = htb-scaffold/wtftp
 	url = https://github.com/garrettfoster13/wtftp
+[submodule "htb-layover/CVE-2026-28695-craft-rce-bypass"]
+	path = htb-layover/CVE-2026-28695-craft-rce-bypass
+	url = https://github.com/gbuyssens/CVE-2026-28695-craft-rce-bypass.git
+[submodule "htb-layover/CVE-2026-34990"]
+	path = htb-layover/CVE-2026-34990
+	url = https://github.com/predyy/CVE-2026-34990.git
