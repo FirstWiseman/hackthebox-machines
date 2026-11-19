@@ -1,0 +1,4 @@
+dn: CN=IT,OU=IT,OU=Scaffold,DC=scaffold,DC=htb
+changetype: modify
+replace: groupType
+groupType: -2147483646

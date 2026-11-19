@@ -1,0 +1,4 @@
+dn: CN=m.carter,OU=Users,OU=Scaffold,DC=Scaffold,DC=htb
+changetype: modify
+replace: userAccountControl
+userAccountControl: 66048

@@ -1,0 +1,6 @@
+[submodule "htb-scaffold/kerbrute"]
+	path = htb-scaffold/kerbrute
+	url = https://github.com/ropnop/kerbrute
+[submodule "htb-scaffold/wtftp"]
+	path = htb-scaffold/wtftp
+	url = https://github.com/garrettfoster13/wtftp

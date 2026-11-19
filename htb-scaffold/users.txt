@@ -1,0 +1,15 @@
+Administrator
+Guest
+krbtgt
+svc_mdt
+m.carter
+svc_deploy
+t.nguyen
+j.harris
+r.wilson
+k.patel
+d.cooper
+m.chen
+t.walker
+o.bennett
+svc_mdtmonitor

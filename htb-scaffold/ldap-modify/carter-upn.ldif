@@ -1,0 +1,7 @@
+dn: CN=m.carter,OU=Users,OU=Scaffold,DC=scaffold,DC=htb
+changetype: modify
+replace: userPrincipalName
+userPrincipalName: Administrator
+-
+replace: mail
+mail: m.carter@scaffold.htb

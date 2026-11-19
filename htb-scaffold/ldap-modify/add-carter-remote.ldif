@@ -1,0 +1,4 @@
+dn: CN=Endpoint Remote Management,OU=ManagedObjects,OU=Scaffold,DC=scaffold,DC=htb
+changetype: modify
+add: member
+member: CN=m.carter,OU=Users,OU=Scaffold,DC=scaffold,DC=htb

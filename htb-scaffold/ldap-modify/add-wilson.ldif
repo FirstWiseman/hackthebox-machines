@@ -1,0 +1,4 @@
+dn: CN=Helpdesk operator,OU=Helpdesk,OU=Scaffold,DC=scaffold,DC=htb
+changetype: modify
+add: member
+member: CN=r.wilson,OU=Users,OU=Scaffold,DC=scaffold,DC=htb

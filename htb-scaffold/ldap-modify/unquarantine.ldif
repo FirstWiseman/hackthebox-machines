@@ -1,0 +1,4 @@
+dn: CN=Quarantined_Accounts,OU=Scaffold,DC=scaffold,DC=htb
+changetype: modify
+replace: groupType
+groupType: 2
