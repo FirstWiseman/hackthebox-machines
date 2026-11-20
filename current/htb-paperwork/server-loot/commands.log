@@ -1,0 +1,31 @@
+@PJL FSUPLOAD NAME="0:\logs\commands.log" OFFSET=0 SIZE=4096
+@PJL FSUPLOAD NAME="0:\logs\commands.log" SIZE=801
+Listening on port 9100
+Listening on port 9100
+Listening on port 9100
+Listening on port 9100
+Listening on port 9100
+Listening on port 9100
+Listening on port 9100
+Listening on port 9100
+Listening on port 9100
+Listening on port 9100
+Listening on port 9100
+Listening on port 9100
+Listening on port 9100
+Listening on port 9100
+Listening on port 9100
+Listening on port 9100
+[127.0.0.1] connected
+Command: @PJL INFO STATUS
+Command: @PJL INFO ID
+Command: @PJL FSDIRLIST
+Command: @PJL FSDOWNLOAD jetdirect.py
+Command: @PJL RDYMSG
+[127.0.0.1] connected
+Command: @PJL RDYMSG
+Command: @PJL FSUPLOAD NAME="jetdirect.py" OFFSET=0 SIZE=5119
+Command: @PJL INFO FILESYS
+Command: @PJL FSDIRLIST
+Command: @PJL FSDIRLIST NAME="logs" ENTRY=1 COUNT=100
+Command: @PJL FSUPLOAD NAME="0:\logs\commands.log" OFFSET=0 SIZE=4096
