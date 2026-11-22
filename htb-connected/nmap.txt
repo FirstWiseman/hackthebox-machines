@@ -1,0 +1,11 @@
+# Nmap 7.993 scan initiated Sun Nov 22 21:35:56 2026 as: nmap -p- --open -T4 -oN nmap.txt 10.129.215.215
+Nmap scan report for 10.129.215.215
+Host is up (0.067s latency).
+Not shown: 65532 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Sun Nov 22 21:38:15 2026 -- 1 IP address (1 host up) scanned in 138.65 seconds
