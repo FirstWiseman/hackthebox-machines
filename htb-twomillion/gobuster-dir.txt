@@ -1,0 +1,7 @@
+logout              [36m (Status: 302)[0m [Size: 0][34m [--> /][0m
+login               [32m (Status: 200)[0m [Size: 3704]
+register            [32m (Status: 200)[0m [Size: 4527]
+api                 [33m (Status: 401)[0m [Size: 0]
+home                [36m (Status: 302)[0m [Size: 0][34m [--> /][0m
+404                 [32m (Status: 200)[0m [Size: 1674]
+invite              [32m (Status: 200)[0m [Size: 3859]

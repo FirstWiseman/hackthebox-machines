@@ -1,0 +1,3 @@
+login               [36m (Status: 302)[0m [Size: 0][34m [--> /login?error=Please+enter+an+email][0m
+register            [36m (Status: 302)[0m [Size: 0][34m [--> /register?error=Please+fill+in+all+fields][0m
+auth                [33m (Status: 405)[0m [Size: 0]
